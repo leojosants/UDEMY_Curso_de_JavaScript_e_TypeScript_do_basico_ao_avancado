@@ -1,4 +1,6 @@
-//
+/*
+    callback é um tipo de função que só é executada após o processamento de outra função.
+*/
 rand = (min = 1000, max = 3000) => {
     const num = Math.random() * (max - min) + min;
     return Math.floor(num);

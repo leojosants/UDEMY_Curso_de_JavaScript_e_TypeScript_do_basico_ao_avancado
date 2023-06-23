@@ -1,4 +1,6 @@
-// Closure é a habilidade da função acessar o seu escopo léxico.
+/*
+    Uma closure é a combinação de uma função com as referências ao estado que a circunda (o ambiente léxico). Em outras palavras, uma closure lhe dá acesso ao escopo de uma função externa a partir de uma função interna.
+*/
 
 retornaFuncao = (nome) => {
     return function () { return nome; }
