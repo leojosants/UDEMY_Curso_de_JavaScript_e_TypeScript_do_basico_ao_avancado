@@ -1,5 +1,5 @@
-/*
-    https://blog.dbins.com.br/como-funciona-a-logica-da-validacao-do-cpf
+
+/* https://blog.dbins.com.br/como-funciona-a-logica-da-validacao-do-cpf
 
     CPF: 705.484.450-52
 
@@ -30,3 +30,49 @@
         - REGRA 1: Se o resto for 0 ou 1, então o primeiro dígito verificador é igual a 0.
         - REGRA 2: Se o resto for 2, 3, 4, 5, 6, 7, 8, 9 ou 10, então o segundo dígito verificador é a diferença entre o número 11 e o resto da divisão por 11 --> RESULTADO DO SEGUNDO DIGITO: 11 - 9 = 2
 */
+
+function ValidarCPF(cpfEnviado) {
+
+    Object.defineProperty(this, 'cpfLimpo', { get: function () { return cpfEnviado.replace(/\D+/g, ''); } });
+
+    ValidarCPF.prototype.valida = function () {
+        if (typeof this.cpfLimpo === 'undefined') return false;
+        if (this.cpfLimpo.length !== 11) return false;
+        if (this.isSequencia()) return false;
+
+        const cpfParcial = this.cpfLimpo.slice(0, -2);
+        const digito1 = this.criaDigito(cpfParcial);
+        const digito2 = this.criaDigito(cpfParcial + digito1);
+        const novoCPF = cpfParcial + digito1 + digito2;
+
+        return novoCPF === this.cpfLimpo;
+    };
+
+    ValidarCPF.prototype.criaDigito = function (cpfParcial) {
+        const cpfArray = Array.from(cpfParcial);
+        let contRegressivo = cpfArray.length + 1;
+
+        const total = cpfArray.reduce((acumulador, valor) => {
+            acumulador += (contRegressivo * Number(valor));
+
+            contRegressivo--;
+
+            return acumulador;
+        }, 0);
+
+        const digito = 11 - (total % 11);
+
+        return digito > 9 ? 0 : String(digito);
+    };
+
+    ValidarCPF.prototype.isSequencia = function () {
+        const sequencia = this.cpfLimpo[0].repeat(this.cpfLimpo.length);
+
+        return sequencia === this.cpfLimpo;
+    };
+}
+
+const cpf = new ValidarCPF('705.484.450-52');
+
+if (cpf.valida()) { console.log('CPF válido') }
+else { console.log('CPF inválido') }
