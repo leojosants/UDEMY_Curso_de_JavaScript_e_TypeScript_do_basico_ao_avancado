@@ -4,6 +4,7 @@
     --color_0: #0d6a86;
     --color_1: #093038;
     --color_2: #ffffff;
+    --color_3: #ff0000;
 }
 
 * {
@@ -74,4 +75,9 @@ form button:hover {
 
 form button:active {
     background-color: var(--color_0);
+}
+
+.error_text {
+    font-size: 12px;
+    color: var(--color_3);
 }
