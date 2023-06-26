@@ -1,0 +1,1 @@
+{"version":3,"file":"bunble.js","mappings":"AAGAA,QAAQC,IAAI","sources":["webpack://aula_94-webpack_boilerplate/./src/index.js"],"sourcesContent":["//\r\n//\r\n//\r\nconsole.log('teste');"],"names":["console","log"],"sourceRoot":""}
