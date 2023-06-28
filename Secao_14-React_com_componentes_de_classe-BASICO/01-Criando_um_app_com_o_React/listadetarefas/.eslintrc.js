@@ -27,5 +27,6 @@ module.exports = {
     'react/state-in-constructor': 0,
     'import/no-extraneous-dependencies': 0,
     'no-unused-vars': 0,
+    'react/forbid-prop-types': 0,
   },
 };
