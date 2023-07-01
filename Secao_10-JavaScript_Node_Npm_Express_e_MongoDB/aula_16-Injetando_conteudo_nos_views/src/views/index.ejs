@@ -1,0 +1,38 @@
+<%- include('./includes/head.ejs') %>
+    
+    <section class="container">
+        <h1>
+            <% if(typeof titulo !== 'undefined') { %>
+                <%= titulo %>
+            <% } else { %>
+                O título não foi enviado!
+            <% } %>
+        </h1>          
+        
+        <p>
+            <% for(numero of numeros) { %>
+                <%= numero %>
+            <% } %>
+        </p>
+
+        <p>
+            <% for(let i = 0; i < numeros.length; i++) { %>
+                <%= numeros[i] %>
+            <% } %>
+        </p>
+
+        <p>
+            <% numeros.forEach(numero => { %>
+                <%= numero %>
+            <% }) %>
+        </p>
+
+        <form action="/" method="post">
+            <label>Cliente</label>
+            <input type="text" name="cliente" />
+            
+            <button>Enviar</button>
+        </form>
+    </section>
+
+<%- include('./includes/footer.ejs') %>
