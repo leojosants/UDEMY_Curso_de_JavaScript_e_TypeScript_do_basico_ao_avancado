@@ -1,0 +1,18 @@
+
+O Helmet:
+   
+    É na realidade apenas uma coleção de nove funções de middlewares menores que configuram cabeçalhos HTTP relacionados à segurança: A csp configura o cabeçalho Content-Security-Policy para ajudar a evitar ataques de cross-site scripting e outras injeções cross-site.
+
+    --> https://expressjs.com/pt-br/advanced/best-practice-security.html#:~:text=O%20Helmet%20%C3%A9%20na%20realidade,e%20outras%20inje%C3%A7%C3%B5es%20cross%2Dsite.
+
+    Helmet no localhost (EVITE):
+        O Helmet é para segurança da aplicação, portanto, caso você esteja com um sistema ainda em desenvolvimento, usando urls como "127.0.0.1", "localhost" ou até um servidor com IP externo, sem usar SSL (https), é recomendável desativá-lo. Ele pode bloquear importação de scripts e arquivos de CSS.
+
+        Caso ocorra erros ao importar o bundle.js, arquivos de CDN (como bootstrap, por exemplo) ou CSS, basta desativar o helmet para correção.
+
+        Isso só ocorrerá em sistemas sem SSL (sem https na URL).
+
+
+O cross-site request forgery, em português falsificação de solicitação entre sites:
+    
+    Também conhecido como ataque de um clique ou montagem de sessão, é um tipo de exploit malicioso de um website, no qual comandos não autorizados são transmitidos a partir de um usuário em quem a aplicação web confia.
