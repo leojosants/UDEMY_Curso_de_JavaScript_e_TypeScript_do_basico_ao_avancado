@@ -6,3 +6,6 @@
 
 -> ESLint:
     É um linter, uma ferramenta de análise estática, para as linguagens Javascript e Typescript, sendo o mais popular do mundo para tais linguagens. criado por Nicholas C. Zakas em 2013. As regras do ESLint são customizáveis, cobrindo tanto problemas de qualidade de software como de estilo.
+
+-> O Sequelize:
+    É um ORM, ou seja, um mapeador objeto-relacional. Isso significa que ele permite que você crie modelos (classes) em TypeScript ou JavaScript que representam as tabelas do seu banco de dados. Assim, você pode manipular os dados usando objetos e métodos, sem precisar escrever SQL diretamente.
