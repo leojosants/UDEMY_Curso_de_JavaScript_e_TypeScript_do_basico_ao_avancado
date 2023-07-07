@@ -1,11 +1,14 @@
 -> Nodemon:
-    Serve para reiniciar o servidor automaticamente a cada modificação salva no código e nos ajuda a ganhar tempo.
+  Serve para reiniciar o servidor automaticamente a cada modificação salva no código e nos ajuda a ganhar tempo.
 
 -> Sucrase:
-    Utiliza a sintaxe do ES6 na importação e exportação de módulos, a mesma sintaxe usada no React.
+  Utiliza a sintaxe do ES6 na importação e exportação de módulos, a mesma sintaxe usada no React.
 
 -> ESLint:
-    É um linter, uma ferramenta de análise estática, para as linguagens Javascript e Typescript, sendo o mais popular do mundo para tais linguagens. criado por Nicholas C. Zakas em 2013. As regras do ESLint são customizáveis, cobrindo tanto problemas de qualidade de software como de estilo.
+  É um linter, uma ferramenta de análise estática, para as linguagens Javascript e Typescript, sendo o mais popular do mundo para tais linguagens. criado por Nicholas C. Zakas em 2013. As regras do ESLint são customizáveis, cobrindo tanto problemas de qualidade de software como de estilo.
 
--> O Sequelize:
-    É um ORM, ou seja, um mapeador objeto-relacional. Isso significa que ele permite que você crie modelos (classes) em TypeScript ou JavaScript que representam as tabelas do seu banco de dados. Assim, você pode manipular os dados usando objetos e métodos, sem precisar escrever SQL diretamente.
+-> Sequelize:
+  É um ORM, ou seja, um mapeador objeto-relacional. Isso significa que ele permite que você crie modelos (classes) em TypeScript ou JavaScript que representam as tabelas do seu banco de dados. Assim, você pode manipular os dados usando objetos e métodos, sem precisar escrever SQL diretamente.
+
+-> JSON Web Token:
+  É um padrão da Internet para a criação de dados com assinatura opcional e/ou criptografia cujo payload contém o JSON que afirma algum número de declarações. Os tokens são assinados usando um segredo privado ou uma chave pública/privada.
