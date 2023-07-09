@@ -17,3 +17,6 @@
   A equipe está trabalhando com testes (Ou tem dados como default para a plicação) e toda vez ela precisa inserir dados é um processo manual atráves de uma controller, ou utilizando o model para fazer a criação, a depender da quantidade de registros que queira inserir será muito trabalhoso.
 
   Por isso os seeders existem, para deixar um padrão de preenchimento das tabelas com informações reais ou fictícias a depender da necessidade para ser utilizado no momento que desejar.
+
+-> Multer:
+  É um middleware que internamente utiliza a lib busboy para lidar com formulários multipart/form-data . Normalmente utilizamos o multipart/form-data para fazer o upload de arquivos.
