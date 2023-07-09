@@ -23,9 +23,19 @@ module.exports = {
   },
   rules: {
     'no-console': 'off',
+    'no-extraneous-dependencies': 'off',
+    'import/no-extraneous-dependencies': 'off',
     'class-methods-use-this': 'off',
     'import/first': 'off',
     'no-param-reassign': 'off',
-    'import/no-extraneous-dependencies': 'off',
   },
 };
+
+/*
+  module.exports = {
+  },
+  rules: {
+    'import/
+  },
+};
+*/

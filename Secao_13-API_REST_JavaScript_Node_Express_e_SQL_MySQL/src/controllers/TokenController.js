@@ -1,22 +1,22 @@
 import jwt from 'jsonwebtoken';
-import User from '../models/User';
+import User from '../models/UserModel';
 
 class TokenController {
   async store(req, res) {
     const { email = '', password = '' } = req.body;
 
     if (!email || !password) {
-      return res.status(401).json({ errors: ['CREDENCIAIS inválidas!'] });
+      return res.status(401).json({ errors: ['--> CREDENCIAIS inválidas!'] });
     }
 
     const user = await User.findOne({ where: { email } });
 
     if (!user) {
-      return res.status(401).json({ errors: ['USUÁRIO não existe!'] });
+      return res.status(401).json({ errors: ['--> USUÁRIO não existe!'] });
     }
 
     if (!(await user.passwordIsValid(password))) {
-      return res.status(401).json({ errors: ['SENHA inválida!'] });
+      return res.status(401).json({ errors: ['--> SENHA inválida!'] });
     }
 
     const { id } = user;

@@ -11,7 +11,7 @@ export default class User extends Model {
           validate: {
             len: {
               args: [3, 255],
-              msg: 'Campo NOME deve ter entre 3 e 255 caracteres!',
+              msg: '--> Campo NOME deve ter entre 3 e 255 caracteres!',
             },
           },
         },
@@ -19,12 +19,12 @@ export default class User extends Model {
           type: Sequelize.STRING,
           defaultValue: '',
           validate: {
-            isEmail: { msg: 'E-MAIL inválido!' },
+            isEmail: { msg: '--> E-MAIL inválido!' },
             isUnique(value, next) {
               User.findOne({ where: { email: value } })
                 .then((user) => {
                   if (user) {
-                    return next('EMAIL já existe, tente outro!');
+                    return next('--> EMAIL já existe, tente outro!');
                   }
                   return next();
                 })
@@ -42,7 +42,7 @@ export default class User extends Model {
           validate: {
             len: {
               args: [6, 50],
-              msg: 'A SENHA precisa ter entre 6 e 50 caracteres!',
+              msg: '--> A SENHA precisa ter entre 6 e 50 caracteres!',
             },
           },
         },

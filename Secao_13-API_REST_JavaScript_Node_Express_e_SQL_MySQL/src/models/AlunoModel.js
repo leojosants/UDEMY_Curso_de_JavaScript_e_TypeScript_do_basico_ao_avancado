@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import Sequelize, { Model } from 'sequelize';
 
 export default class Aluno extends Model {
