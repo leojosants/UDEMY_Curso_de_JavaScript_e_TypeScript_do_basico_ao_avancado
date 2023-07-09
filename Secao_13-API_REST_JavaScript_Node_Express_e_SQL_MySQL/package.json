@@ -14,6 +14,7 @@
     "eslint": "^8.44.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
+    "faker": "^5.5.3",
     "nodemon": "^3.0.0",
     "sequelize-cli": "^6.6.1",
     "sucrase": "^3.32.0"

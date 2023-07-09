@@ -12,3 +12,8 @@
 
 -> JSON Web Token:
   É um padrão da Internet para a criação de dados com assinatura opcional e/ou criptografia cujo payload contém o JSON que afirma algum número de declarações. Os tokens são assinados usando um segredo privado ou uma chave pública/privada.
+
+-> Seeders:
+  A equipe está trabalhando com testes (Ou tem dados como default para a plicação) e toda vez ela precisa inserir dados é um processo manual atráves de uma controller, ou utilizando o model para fazer a criação, a depender da quantidade de registros que queira inserir será muito trabalhoso.
+
+  Por isso os seeders existem, para deixar um padrão de preenchimento das tabelas com informações reais ou fictícias a depender da necessidade para ser utilizado no momento que desejar.

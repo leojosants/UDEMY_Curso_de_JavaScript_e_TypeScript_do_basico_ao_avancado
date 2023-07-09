@@ -19,7 +19,6 @@ class UserController {
       return res.json(users);
     } catch (e) {
       return res.json(null);
-      // return res.status(400).json({ errors: e.errors.map((err) => err.message)});
     }
   }
 
