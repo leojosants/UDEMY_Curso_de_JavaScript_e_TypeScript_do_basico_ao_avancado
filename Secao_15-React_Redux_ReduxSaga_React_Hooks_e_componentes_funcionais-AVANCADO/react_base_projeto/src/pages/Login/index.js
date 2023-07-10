@@ -14,6 +14,8 @@ export default function Login() {
         placeat cumque quia eius deleniti temporibus inventore vitae excepturi
         enim ea, unde id expedita eaque. Eum modi at beatae porro!
       </Paragrafo>
+
+      <button type="button">Enviar</button>
     </Container>
   );
 }
