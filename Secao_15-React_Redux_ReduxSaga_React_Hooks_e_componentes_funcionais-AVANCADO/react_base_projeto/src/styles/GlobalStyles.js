@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import { primaryColor, primaryDarkColor } from '../config/colors';
+import * as colors from '../config/colors';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default createGlobalStyle`
   * {
@@ -11,8 +12,8 @@ export default createGlobalStyle`
 
   body {
     font-family: sans-serif;
-    background: ${primaryDarkColor};
-    color: ${primaryDarkColor};
+    background: ${colors.primaryDarkColor};
+    color: ${colors.primaryDarkColor};
 
   }
 
@@ -21,7 +22,7 @@ export default createGlobalStyle`
   }
 
   button {
-    background: ${primaryColor};
+    background: ${colors.primaryColor};
     cursor: pointer;
     border: none;
     color: #fff;
@@ -32,12 +33,48 @@ export default createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: ${primaryColor};
+    color: ${colors.primaryColor};
   }
 
   ul {
     list-style: none;
   }
+
+  body .Toastify .Toastify__toast-container .Toastify__toast--success {
+    background: ${colors.successColor};
+    color: #fff;
+  }
+
+  .Toastify__progress-bar--success {
+  background: white;
+}
+
+  body .Toastify .Toastify__toast-container .Toastify__toast--error {
+    background: ${colors.errorColor};
+    color: #fff;
+  }
+
+  .Toastify__progress-bar--error {
+  background: white;
+}
+
+  body .Toastify .Toastify__toast-container .Toastify__toast--info {
+    background: ${colors.infoColor};
+    color: #fff;
+  }
+
+  .Toastify__progress-bar--info {
+  background: white;
+}
+
+  body .Toastify .Toastify__toast-container .Toastify__toast--warning {
+    background: ${colors.warningColor};
+    color: #fff;
+  }
+
+  .Toastify__progress-bar--warning {
+  background: white;
+}
 `;
 
 export const Container = styled.section`
