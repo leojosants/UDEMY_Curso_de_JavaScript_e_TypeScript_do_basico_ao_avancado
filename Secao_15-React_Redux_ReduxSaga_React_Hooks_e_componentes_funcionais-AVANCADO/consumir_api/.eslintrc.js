@@ -5,7 +5,7 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    // 'airbnb', // indicado desabilitar caso seja necessário criar muitas regras
+    'airbnb', // indicado desabilitar caso seja necessário criar muitas regras
     'plugin:prettier/recommended',
   ],
   parser: '@babel/eslint-parser',
@@ -29,5 +29,6 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'import/no-extraneous-dependencies': 'off',
     'default-param-last': 'off',
+    'react/jsx-no-useless-fragment': 'off',
   },
 };
