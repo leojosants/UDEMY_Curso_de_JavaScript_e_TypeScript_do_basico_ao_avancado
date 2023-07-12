@@ -1,3 +1,3 @@
 import axios from 'axios';
 
-export default axios.create({ baseURL: 'INSERIR_URL' });
+export default axios.create({ baseURL: 'http://localhost:3001' });

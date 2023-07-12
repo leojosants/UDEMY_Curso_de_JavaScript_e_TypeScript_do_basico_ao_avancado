@@ -47,7 +47,7 @@ export default createGlobalStyle`
 
   .Toastify__progress-bar--success {
   background: white;
-}
+  }
 
   body .Toastify .Toastify__toast-container .Toastify__toast--error {
     background: ${colors.errorColor};
@@ -56,7 +56,7 @@ export default createGlobalStyle`
 
   .Toastify__progress-bar--error {
   background: white;
-}
+  }
 
   body .Toastify .Toastify__toast-container .Toastify__toast--info {
     background: ${colors.infoColor};
@@ -65,7 +65,7 @@ export default createGlobalStyle`
 
   .Toastify__progress-bar--info {
   background: white;
-}
+  }
 
   body .Toastify .Toastify__toast-container .Toastify__toast--warning {
     background: ${colors.warningColor};
@@ -73,12 +73,12 @@ export default createGlobalStyle`
   }
 
   .Toastify__progress-bar--warning {
-  background: white;
-}
+    background: white;
+  }
 `;
 
 export const Container = styled.section`
-  max-width: 360px;
+  max-width: 480px;
   background: #fff;
   margin: 30px auto;
   padding: 30px;
