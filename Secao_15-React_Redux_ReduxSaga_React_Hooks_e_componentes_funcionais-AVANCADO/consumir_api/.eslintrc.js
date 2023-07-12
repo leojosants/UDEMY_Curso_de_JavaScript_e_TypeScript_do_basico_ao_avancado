@@ -5,7 +5,7 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    'airbnb', // indicado desabilitar caso seja necessário criar muitas regras
+    // 'airbnb', // indicado desabilitar caso seja necessário criar muitas regras
     'plugin:prettier/recommended',
   ],
   parser: '@babel/eslint-parser',
@@ -28,33 +28,6 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'import/no-extraneous-dependencies': 'off',
+    'default-param-last': 'off',
   },
 };
-
-/* module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-  },
-  extends: 'airbnb',
-  overrides: [
-    {
-      env: {
-        node: true,
-      },
-      files: [
-        '.eslintrc.{js,cjs}',
-      ],
-      parserOptions: {
-        sourceType: 'script',
-      },
-    },
-  ],
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-  },
-  rules: {
-  },
-};
-*/
