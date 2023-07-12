@@ -5,7 +5,7 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    'airbnb',
+    'airbnb', // indicado desabilitar caso seja necessário criar muitas regras
     'plugin:prettier/recommended',
   ],
   parser: '@babel/eslint-parser',
