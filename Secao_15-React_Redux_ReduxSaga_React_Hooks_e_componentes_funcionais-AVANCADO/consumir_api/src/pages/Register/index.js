@@ -62,7 +62,7 @@ export default function Register() {
             type="text"
             value={nome}
             onChange={(e) => setNome(e.target.value)}
-            placeholder="Digite seu nome"
+            placeholder="Digite o nome"
           />
         </label>
         <label htmlFor="email">
@@ -71,7 +71,7 @@ export default function Register() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Digite seu e-mail"
+            placeholder="Digite o e-mail"
           />
         </label>
         <label htmlFor="password">
@@ -80,7 +80,7 @@ export default function Register() {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            placeholder="Digite sua senha"
+            placeholder="Digite a senha"
           />
         </label>
         <button type="submit">{id ? 'Salvar' : 'Criar minha conta'}</button>
