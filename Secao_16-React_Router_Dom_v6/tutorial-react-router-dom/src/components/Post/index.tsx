@@ -8,6 +8,8 @@ export const Post = () => {
     const [qs] = useSearchParams();
 
     return (
-        <div>Post {`Params: ${id}`} {`QS: ${qs.get('segundo')}`}</div>
+        <div>
+            <h1>Post {`Params: ${id}`} {`QS: ${qs.get('segundo')}`}</h1>
+        </div>
     );
 };
