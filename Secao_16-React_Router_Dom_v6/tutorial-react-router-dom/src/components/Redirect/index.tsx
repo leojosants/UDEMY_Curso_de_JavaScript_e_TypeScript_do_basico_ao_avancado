@@ -16,7 +16,12 @@ export const Redirect = () => {
             setTime((t) => t - 1);
         }, 1000)
 
-        if (time <= 0) navigate('/');
+        if (time <= 0) {
+            navigate('/about', {
+                state: `This is the state: ${Math.floor(Math.random() * 100)}`,
+            });
+        }
+
         return () => clearTimeout(timeout.current);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [time])
