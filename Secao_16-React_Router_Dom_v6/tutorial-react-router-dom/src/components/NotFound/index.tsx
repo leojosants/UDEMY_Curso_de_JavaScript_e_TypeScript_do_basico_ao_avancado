@@ -3,7 +3,7 @@ import './style.css';
 import { useNavigate } from 'react-router-dom';
 import { useState, useRef, useEffect } from 'react';
 
-export const Redirect = () => {
+export const NotFound = () => {
     const [time, setTime] = useState(3);
 
     const timeout = useRef(0);
@@ -23,7 +23,8 @@ export const Redirect = () => {
 
     return (
         <div>
-            <h1>Get out of here in: {time}</h1>
+            <h1>Page not found.</h1>
+            <h2>Get out of here in: {time}</h2>
         </div>
     );
 };
