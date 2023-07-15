@@ -65,5 +65,5 @@ module.exports = {
     cpfs,
     ips,
     cpfs2,
-    html2,
+    html2
 };
