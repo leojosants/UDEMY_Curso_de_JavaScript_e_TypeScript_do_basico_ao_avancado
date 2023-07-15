@@ -6,3 +6,6 @@
 
 ->  IMPORTANTE: 
     Documentação (MDN - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_expressions).
+
+->  Teste online de exprssões regulares:
+    https://regex101.com/r/tE5xQ4/29
