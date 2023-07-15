@@ -11,4 +11,15 @@ const texto = `
     "Joooooooooãoooooooooooooooooooooooooooo   , o café tá prontinho aqui. Veeemm"!
 `;
 
-module.exports = { texto };
+const arquivos = [
+    'Atenção.jpg',
+    'FOTO.jpeg',
+    'Meu gatinho.jpg',
+    'Meu gatinho.JPG',
+    'Meu gatinho.JPEG',
+    'Meu gatinho.JPeeEEEEeeeeeeeeeeeeeeeeeeeeeeeeEEEEEEEEEEG',
+    'Marido.png',
+    'lista de compras.txt',
+];
+
+module.exports = { texto, arquivos };
