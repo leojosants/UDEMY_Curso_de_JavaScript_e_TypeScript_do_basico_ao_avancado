@@ -33,5 +33,7 @@ module.exports = {
 
     plugins: ['@typescript-eslint'],
 
-    rules: {},
+    rules: {
+        'prettier/prettier': 'off',
+    },
 };
