@@ -1,1 +1,2 @@
-console.log('ola');
+const nome = 'Leonardo';
+const sobrenome = "Santos"
