@@ -3,3 +3,6 @@
 
 ->  Webpack TypeScript:
     https://webpack.js.org/guides/typescript/
+
+-> TypeScript loader for webpack:
+    https://github.com/TypeStrong/ts-loader
