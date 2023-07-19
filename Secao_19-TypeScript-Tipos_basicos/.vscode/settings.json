@@ -1,6 +1,0 @@
-{
-  "window.zoomLevel": -1,
-    "code-runner.executorMap": {
-        "typescript": "npx ts-node --files",
-    }
-}

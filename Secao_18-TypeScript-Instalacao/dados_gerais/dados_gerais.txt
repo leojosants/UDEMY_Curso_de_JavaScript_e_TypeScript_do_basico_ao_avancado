@@ -1,2 +1,0 @@
-->  Repositório da seção TypeScript:
-    https://github.com/luizomf/cursojstypescript
