@@ -1,1 +1,7 @@
-->  Repositório da seção TypeScript: https://github.com/luizomf/cursojstypescript
+->  Repositório da seção TypeScript:
+    https://github.com/luizomf/cursojstypescript
+
+->  Webpack Typescript:
+    https://webpack.js.org/guides/typescript/
+
+    O webpack é um module bundler semelhante ao browserify que disponibiliza conteúdos estáticos por módulos e dependências, abraçando o conceito de code-splitting.
