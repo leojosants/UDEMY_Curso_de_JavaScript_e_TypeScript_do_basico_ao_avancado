@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './src/aula_0018-webpack/index.ts',
+  entry: './src/aula_0019-Exercicio-Validando_um_formulario/index.ts',
   module: {
     rules: [
       {
@@ -11,7 +11,7 @@ module.exports = {
         loader: 'ts-loader',
         exclude: /node_modules/,
         options: {
-          configFile: ['tsconfig.frontend.json']
+          configFile: 'tsconfig.frontend.json'
         },
       },
     ],
