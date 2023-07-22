@@ -5,3 +5,6 @@
     https://webpack.js.org/guides/typescript/
 
     O webpack é um module bundler semelhante ao browserify que disponibiliza conteúdos estáticos por módulos e dependências, abraçando o conceito de code-splitting.
+
+->  ts-loader:
+    https://github.com/TypeStrong/ts-loader#configuration
