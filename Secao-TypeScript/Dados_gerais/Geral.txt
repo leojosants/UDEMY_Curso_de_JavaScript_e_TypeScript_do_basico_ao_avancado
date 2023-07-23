@@ -20,3 +20,6 @@
 
 ->  Compatibilidade de versões:
     https://kangax.github.io/compat-table/es2016plus/#node12_11
+
+->  Criação de diagramas - UML:
+    https://www.yworks.com/yed-live/
