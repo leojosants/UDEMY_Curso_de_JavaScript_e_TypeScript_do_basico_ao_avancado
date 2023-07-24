@@ -23,3 +23,6 @@
 
 ->  Criação de diagramas - UML:
     https://www.yworks.com/yed-live/
+
+->  The Video Embed element:
+    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
