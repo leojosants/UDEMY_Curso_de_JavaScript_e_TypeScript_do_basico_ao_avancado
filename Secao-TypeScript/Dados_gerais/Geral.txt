@@ -29,3 +29,6 @@
 
 ->  Utility Types:
     https://www.typescriptlang.org/docs/handbook/utility-types.html
+
+->  Decorators:
+    https://www.typescriptlang.org/docs/handbook/decorators.html
