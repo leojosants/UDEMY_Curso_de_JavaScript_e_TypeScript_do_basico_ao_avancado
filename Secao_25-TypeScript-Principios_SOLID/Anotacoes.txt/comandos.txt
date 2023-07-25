@@ -1,0 +1,5 @@
+->  Instalando dependenências:
+    npm i
+
+->  Atualizando pacotes:
+    npx npm-check -u
