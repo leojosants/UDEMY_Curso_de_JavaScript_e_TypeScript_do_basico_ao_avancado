@@ -1,6 +1,10 @@
 ->  Gerar um arquivo de compilação JS para utilizar importação:
       - Estando fora do diretório de destino:
-          npx tsc src/aula_0060-Namespaces_e_modules-Criando_um_namespace/index.ts --outFile src/aula_0060-Namespaces_e_modules-Criando_um_namespace/nome_que_desejar.js
+        npx tsc src/aula_0060-Namespaces_e_modules-Criando_um_namespace/index.ts --outFile src/aula_0060-Namespaces_e_modules-Criando_um_namespace/nome_que_desejar.js
 
       - Estando dentro do diretório de destino:
-          npx tsc index.ts --outFile nome_que_desejar.js
+        npx tsc index.ts --outFile nome_que_desejar.js
+
+->  Importando biblioteca de terceiros:
+    - Primeiro instalar a lib: npm i lodash
+    - Depois instalar o type: npm i --save-dev @types/lodash
