@@ -21,3 +21,4 @@ const person1 = new MyNamespace0.PersonNamespace('Mara');
 console.log(person1);
 console.log(MyNamespace0.name);
 console.log(MyNamespace0.OtherNamespace.name);
+
