@@ -1,0 +1,6 @@
+->  Gerar um arquivo de compilação JS para utilizar importação:
+      - Estando fora do diretório de destino:
+          npx tsc src/aula_0060-Namespaces_e_modules-Criando_um_namespace/index.ts --outFile src/aula_0060-Namespaces_e_modules-Criando_um_namespace/nome_que_desejar.js
+
+      - Estando dentro do diretório de destino:
+          npx tsc index.ts --outFile nome_que_desejar.js
