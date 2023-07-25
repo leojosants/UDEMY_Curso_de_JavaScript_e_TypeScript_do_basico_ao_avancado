@@ -32,3 +32,6 @@
 
 ->  Decorators:
     https://www.typescriptlang.org/docs/handbook/decorators.html
+
+->  Declaration File - TS:
+    https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html
