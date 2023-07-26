@@ -1,0 +1,12 @@
+->  Instalando o Jest e seu type:
+    - npm i jest ts-jest @types/jest -D
+
+->  Atualização de pacotes:
+    - npx npm-check -u
+
+->  Iniciando um projeto com Jest, duas maneiras:
+    - Maneira 1: npx jest --init
+    - Maneira 2: npx ts-jest config:init
+
+->  Exectando testes:
+    - npx jest
