@@ -1,2 +1,5 @@
 ->  SOLID:
     https://en.wikipedia.org/wiki/SOLID
+
+->  Github da seção:
+    https://github.com/luizomf/typescriptsolid
