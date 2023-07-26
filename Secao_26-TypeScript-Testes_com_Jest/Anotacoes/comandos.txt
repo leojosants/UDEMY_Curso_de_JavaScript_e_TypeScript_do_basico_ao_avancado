@@ -10,3 +10,9 @@
 
 ->  Exectando testes:
     - npx jest
+
+->  Executando o Jest através de um script:
+    - npm test
+
+->  Executando o Jest através de um script: Assistente de atualizações, não exibir saidas indesejadas e saídas sem erros:
+    npm run test:silent
