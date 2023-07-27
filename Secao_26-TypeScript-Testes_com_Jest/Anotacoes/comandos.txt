@@ -22,6 +22,10 @@
     npx jest --clearCache
 
 ->  Gerando relatório de testes:
-    npx jest --coverage
+    - Comando sem scrip:
+      npx jest --coverage
+
+    - Comando com script:
+      npm run test:coverage
 
     - Local onde é gerado o relatório: C:\REPOSITORIO_GITHUB_DESKTOP\UDEMY_Curso_de_JavaScript_e_TypeScript_do_basico_ao_avancado\Secao_26-TypeScript-Testes_com_Jest\coverage\lcov-report\index.html
