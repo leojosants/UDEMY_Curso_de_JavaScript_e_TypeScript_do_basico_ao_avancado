@@ -5,7 +5,7 @@ import { MessagingProtocol } from "./interfaces/messaging-protocol";
 import { PersistencyProtocol } from "./interfaces/persistency-protocol";
 
 export class Order {
-  private _orderStatus: OrderStatus = 'Status: open';
+  private _orderStatus: OrderStatus = 'open';
 
   constructor(
     // eslint-disable-next-line no-unused-vars
@@ -31,7 +31,7 @@ export class Order {
       return;
     }
 
-    this._orderStatus = 'Status: closed';
+    this._orderStatus = 'closed';
     this.messaging.sendMessage(`Seu pedido com total de R$${this.cart.totalWithDiscount()} foi recebido!`);
     this.persistency.saveOrder();
     this.cart.clear();
