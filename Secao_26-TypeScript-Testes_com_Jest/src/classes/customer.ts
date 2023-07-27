@@ -4,13 +4,11 @@ export class IndividualCustomer implements IndividualCustomerProtocol, CustomerO
   fisrtName: string;
   lastName: string;
   cpf: string;
-  cnpj: string;
 
   constructor(fisrtName: string, lastName: string, cpf: string) {
     this.fisrtName = fisrtName;
     this.lastName = lastName;
     this.cpf = cpf;
-    this.cnpj = '';
   }
 
   getName(): string {
@@ -38,5 +36,4 @@ export class EnterpriseCustomer implements EnterpriseCustomerProtocol, CustomerO
   getIDN(): string {
     return `${this.cnpj}`;
   }
-
 }
